@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quiz sobre profissões</title>
+
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+
+  <body class="bg-gray-100">
+    <div id="container" class="min-h-screen flex flex-col">
+      <!-- =========================
+     CABEÇALHO
+     ========================= -->
+
+      <header
+        class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-6 sm:p-8 md:p-10 text-white text-center"
+      >
+        <!-- Logo do IFSP -->
+        <img
+          src="img/logo.png"
+          alt="Logo do Instituto Federal"
+          class="w-20 sm:w-24 md:w-28 mx-auto mb-4"
+        />
+
+        <!-- Nome da instituição -->
+        <a
+          href="https://www.ifsp.edu.br/"
+          target="_blank"
+          class="text-sm sm:text-base md:text-lg font-semibold hover:underline"
+        >
+          Instituto Federal de Educação, Ciência e Tecnologia de São Paulo
+        </a>
+
+        <!-- Título principal -->
+        <h1
+          class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight"
+        >
+          QUIZ SOBRE PROFISSÕES
+        </h1>
+      </header>
+
+      <!-- =========================
+     BARRA DE NAVEGAÇÃO
+     ========================= -->
+
+      <nav
+        class="bg-[#00420C] px-6 py-3 flex flex-wrap justify-center sm:justify-end gap-5 text-white"
+      >
+        <a href="contatos.html" target="_blank" class="hover:underline">
+          Contatos
+        </a>
+
+        <a
+          href="https://www.ifspcaraguatatuba.edu.br/localizacao"
+          target="_blank"
+          class="hover:underline"
+        >
+          Localização
+        </a>
+
+        <a
+          href="http://www.ifsp.edu.br/ouvidoria"
+          target="_blank"
+          class="hover:underline"
+        >
+          Ouvidoria
+        </a>
+      </nav>
+
+      <!-- =========================
+     CONTEÚDO PRINCIPAL
+     ========================= -->
+
+      <!--
+  ALTERAÇÃO:
+  Container principal com largura máxima, espaçamento
+  e organização responsiva.
+-->
+      <div class="flex-1 max-w-7xl w-full mx-auto px-6 py-10">
+        <!--
+    ALTERAÇÃO:
+    No celular, imagem e caixa ficam uma embaixo da outra.
+    Em telas maiores, ficam lado a lado.
+  -->
+        <div
+          class="flex flex-col md:flex-row items-center md:items-stretch gap-10"
+        >
+          <!-- =========================
+         IMAGEM DO PANFLETO
+         ========================= -->
+
+          <aside class="w-full md:w-1/3 flex justify-center">
+            <!--
+        ALTERAÇÃO:
+        A imagem agora possui tamanho controlado,
+        sombra e bordas arredondadas.
+      -->
+            <img
+              src="img/panfletos.jpeg"
+              alt="Panfleto do quiz sobre profissões"
+              class="rounded-xl shadow-lg"
+            />
+          </aside>
+
+          <!-- =========================
+         CAIXA DO QUIZ
+         ========================= -->
+
+          <main class="w-full md:flex-1">
+            <!--
+        ALTERAÇÃO:
+        Caixa expandida horizontalmente.
+        O md:flex-1 faz ela ocupar todo o espaço
+        disponível ao lado da imagem.
+      -->
+            <section
+              class="w-full h-full min-h-80 bg-white rounded-xl shadow-xl p-6 sm:p-8 flex flex-col justify-center"
+            >
+              <!-- Título da caixa -->
+              <h2 class="text-2xl sm:text-3xl font-bold text-[#00420C] mb-4">
+                Teste seu conhecimento
+              </h2>
+
+              <!-- Texto introdutório -->
+              <p
+                class="text-gray-700 text-base sm:text-lg leading-relaxed mb-6"
+              >
+                Quer descobrir o nível de seu conhecimento sobre a feira de
+                profissões?
+              </p>
+
+              <!-- Área das perguntas -->
+              <div id="quiz" class="bg-gray-100 rounded-lg p-5">
+                
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <!-- =========================
+     RODAPÉ
+     ========================= -->
+
+      <footer
+        class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-5 text-white text-center"
+      >
+        &copy; 2026 João Guilherme, João Vitor e Lucas Pietro | All Rights
+        Reserved
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
