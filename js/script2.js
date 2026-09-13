@@ -13,24 +13,24 @@ const professores = [
   "Guilherme", // 9
   "Carolina", // 10
   "Marcela", // 11
-  "La Salvia", // 12
+  "LaSalvia", // 12
   "Solange", // 13
 ];
 
 const fotoProfessores = {
-  ronaldo: "",
-  júlio: "",
-  heitor: "",
-  ibsen: "",
-  janice: "",
-  noboru: "",
-  kamyla: "img/novoProfessor/kamyla.jpeg",
-  italo: "",
-  guilherme: "",
-  carolina: "img/novoProfessor/carolina.jpg",
-  marcela: "",
-  laSalvia: "",
-  solange: "img/novoProfessor/solange.png",
+  Ronaldo: "",
+  Júlio: "",
+  Heitor: "",
+  Ibsen: "",
+  Janice: "",
+  Noboru: "",
+  Kamyla: "img/novoProfessor/kamyla.jpeg",
+  Ítalo: "",
+  Guilherme: "",
+  Carolina: "img/novoProfessor/carolina.jpg",
+  Marcela: "",
+  LaSalvia: "",
+  Solange: "img/novoProfessor/solange.png",
 };
 
 professores.forEach(function (professor) {
