@@ -18,19 +18,19 @@ const professores = [
 ];
 
 const fotoProfessores = {
-  Ronaldo: "img/fotoProfessores/ronaldo.png",
-  Júlio: "img/fotoProfessores/julio.png",
-  Heitor: "img/fotoProfessores/heitor.png",
-  Ibsen: "img/fotoProfessores/ibsen.png",
-  Janice: "img/fotoProfessores/janice.png",
-  Noboru: "img/fotoProfessores/noboru.png",
-  Kamyla: "img/fotoProfessores/kamyla.png",
-  Ítalo: "img/fotoProfessores/italo.png",
-  Guilherme: "img/fotoProfessores/guilherme.png",
-  Carolina: "img/fotoProfessores/carolina.png",
-  Marcela: "img/fotoProfessores/marcela.png",
-  "La Salvia": "img/fotoProfessores/lasalvia.png",
-  Solange: "img/fotoProfessores/solange.png",
+  ronaldo: "",
+  júlio: "",
+  heitor: "",
+  ibsen: "",
+  janice: "",
+  noboru: "",
+  kamyla: "",
+  italo: "",
+  guilherme: "",
+  carolina: "",
+  marcela: "",
+  laSalvia: "",
+  solange: "",
 };
 
 professores.forEach(function (professor) {
