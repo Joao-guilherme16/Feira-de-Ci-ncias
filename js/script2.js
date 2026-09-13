@@ -24,13 +24,13 @@ const fotoProfessores = {
   ibsen: "",
   janice: "",
   noboru: "",
-  kamyla: "",
+  kamyla: "img/novoProfessor/kamyla.jpeg",
   italo: "",
   guilherme: "",
-  carolina: "",
+  carolina: "img/novoProfessor/carolina.jpg",
   marcela: "",
   laSalvia: "",
-  solange: "",
+  solange: "img/novoProfessor/solange.png",
 };
 
 professores.forEach(function (professor) {
