@@ -26,7 +26,7 @@ const fotoProfessores = {
   Noboru: "",
   Kamyla: "img/novoProfessor/kamyla.jpeg",
   Ítalo: "",
-  Guilherme: "",
+  Guilherme: "img/novoProfessor/guilherme.png",
   Carolina: "img/novoProfessor/carolina.jpg",
   Marcela: "",
   LaSalvia: "",
