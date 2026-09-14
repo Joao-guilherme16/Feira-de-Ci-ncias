@@ -1,10 +1,8 @@
 <!doctype html>
-
 <html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Créditos</title>
@@ -13,107 +11,256 @@
 </head>
 
 <body class="bg-gray-100">
-  <div id="container" class="min-h-screen flex flex-col">
-    <!-- =========================
-     CABEÇALHO
-     ========================= -->
 
+  <div id="container" class="min-h-screen flex flex-col">
+
+    <!-- =========================
+         CABEÇALHO
+         ========================= -->
     <header
-      class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-6 sm:p-8 md:p-10 text-white text-center">
-      <!-- Logo do IFSP -->
-      <img src="img/logo.png" alt="Logo do Instituto Federal" class="w-20 sm:w-24 md:w-28 mx-auto mb-4" />
+      class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-5 sm:p-8 md:p-10 text-white text-center">
+
+      <!-- Logo -->
+      <img
+        src="img/logo.png"
+        alt="Logo do Instituto Federal"
+        class="w-16 sm:w-20 md:w-28 mx-auto mb-4"
+      />
 
       <!-- Nome da instituição -->
-      <a href="https://www.ifsp.edu.br/" target="_blank"
-        class="text-sm sm:text-base md:text-lg font-semibold hover:underline">
+      <a
+        href="https://www.ifsp.edu.br/"
+        target="_blank"
+        class="block text-xs sm:text-sm md:text-lg font-semibold hover:underline px-2"
+      >
         Instituto Federal de Educação, Ciência e Tecnologia de São Paulo
       </a>
 
-      <!-- Título principal -->
-      <h1 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+      <!-- Título -->
+      <h1
+        class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight"
+      >
         CRÉDITOS
       </h1>
+
     </header>
 
-    <!-- =========================
-     BARRA DE NAVEGAÇÃO
-     ========================= -->
 
-    <nav class="bg-[#00420C] px-6 py-3 flex flex-wrap justify-center sm:justify-end gap-5 text-white">
-      <a href="https://www.ifspcaraguatatuba.edu.br/contatos" target="_blank" class="hover:underline">
+    <!-- =========================
+         NAVEGAÇÃO
+         ========================= -->
+    <nav
+      class="bg-[#00420C] px-4 py-3 flex flex-wrap justify-center sm:justify-end gap-3 sm:gap-5 text-white"
+    >
+
+      <a
+        href="https://www.ifspcaraguatatuba.edu.br/contatos"
+        target="_blank"
+        class="text-sm sm:text-base hover:underline"
+      >
         Contatos
       </a>
 
-      <a href="https://www.ifspcaraguatatuba.edu.br/localizacao" target="_blank" class="hover:underline">
+      <a
+        href="https://www.ifspcaraguatatuba.edu.br/localizacao"
+        target="_blank"
+        class="text-sm sm:text-base hover:underline"
+      >
         Localização
       </a>
 
-      <a href="http://www.ifsp.edu.br/ouvidoria" target="_blank" class="hover:underline">
+      <a
+        href="http://www.ifsp.edu.br/ouvidoria"
+        target="_blank"
+        class="text-sm sm:text-base hover:underline"
+      >
         Ouvidoria
       </a>
+
     </nav>
 
+
     <!-- =========================
-     CONTEÚDO PRINCIPAL
-     ========================= -->
+         CONTEÚDO
+         ========================= -->
+    <div
+      class="flex-1 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-10"
+    >
 
-    <!--
-  ALTERAÇÃO:
-  Container principal com largura máxima, espaçamento
-  e organização responsiva.
--->
-    <div class="flex-1 max-w-7xl w-full mx-auto px-6 py-10">
-      <!--
-    ALTERAÇÃO:
-    No celular, imagem e caixa ficam uma embaixo da outra.
-    Em telas maiores, ficam lado a lado.
-  -->
-      <div class="flex flex-col md:flex-row items-center md:items-stretch gap-10">
+      <main class="w-full">
 
-        <main class="w-full md:flex-1">
-          <!--
-        ALTERAÇÃO:
-        Caixa expandida horizontalmente.
-        O md:flex-1 faz ela ocupar todo o espaço
-        disponível ao lado da imagem.
-      -->
-          <section class="w-full h-full min-h-80 bg-white rounded-xl shadow-xl p-6 sm:p-8 flex flex-col justify-center">
-            <!-- Título da caixa -->
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#00420C] mb-4">
-              Esse site foi feito por três alunos do 1ª E.M do if de caraguatatuba
-            </h2>
+        <section
+          class="w-full bg-white rounded-xl shadow-xl p-5 sm:p-8 md:p-10"
+        >
+
+          <!-- Título -->
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl font-bold text-[#00420C] mb-6"
+          >
+            Esse site foi feito por três alunos do 1º E.M. do IF de
+            Caraguatatuba
+          </h2>
 
 
-            <!-- Texto introdutório -->
-            <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-            </p>
+          <!-- =========================
+               INTEGRANTES
+               ========================= -->
+          <div
+            class="relative bg-gray-100 rounded-lg p-4 sm:p-6 md:p-8 mb-6 overflow-hidden"
+          >
 
-            <!-- Área das perguntas -->
-            <div class="bg-gray-100 rounded-lg p-5 font-semibold text-gray-800 mb-4">
-              <div>
-                <img src="" alt="">
+            <!-- FAIXA VERDE (só faz sentido visualmente com os 3 cards lado a lado) -->
+            <div
+              class="hidden md:block absolute top-[42%] left-0 right-0 h-16 sm:h-20 md:h-24 bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] z-0"
+            ></div>
+
+
+            <!-- CONTAINER DOS ALUNOS -->
+            <div
+              class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 "
+            >
+
+
+              <!-- =========================
+                   JOÃO GUILHERME
+                   ========================= -->
+              <div
+                class="flex flex-col items-center text-center min-w-0 bg-white rounded-2xl hover:-translate-y-3 transition-transform  duration-200"
+              >
+
+                <h3
+                  class="text-sm sm:text-base md:text-lg break-words"
+                >
+                  João Guilherme Silva Lino
+                </h3>
+
+                <h4
+                  class="font-bold text-xs sm:text-sm mb-2"
+                >
+                  (Scrum Master)
+                </h4>
+
+                <img
+                  src="img/alunos/joao.jpg"
+                  alt="João Guilherme Silva Lino"
+                  class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover shadow-2xl rounded-full border-6 border-[#00420C]"
+                />
+
+                <h3
+                  class="underline text-sm sm:text-base mt-1"
+                >
+                  @joaogsl16
+                </h3>
+
               </div>
-              <h3>João Guilherme Silva Lino</h3>
-              <h3>João Vitor Abila de Lima</h3>
-              <h3>Lucas Pietro Lopes dos Santos</h3>
-              </h3>
+
+
+              <!-- =========================
+                   JOÃO VITOR
+                   ========================= -->
+              <div
+                class="flex flex-col items-center text-center min-w-0 bg-white rounded-2xl hover:-translate-y-3 transition-transform  duration-200"
+              >
+
+                <h3
+                  class="text-sm sm:text-base md:text-lg break-words"
+                >
+                  João Vitor Abila de Lima
+                </h3>
+
+                <h4
+                  class="font-bold text-xs sm:text-sm mb-2"
+                >
+                  (Desenvolvedor 1)
+                </h4>
+
+                <img
+                  src="img/alunos/cabelo.jpeg"
+                  alt="João Vitor Abila de Lima"
+                  class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover shadow-2xl rounded-full border-6 border-[#00420C]"
+                />
+
+                <h3
+                  class="underline text-sm sm:text-base mt-1"
+                >
+                  @jv.abila
+                </h3>
+
+              </div>
+
+
+              <!-- =========================
+                   LUCAS PIETRO
+                   ========================= -->
+              <div
+                class="flex flex-col items-center text-center min-w-0 bg-white rounded-2xl transition-transform  duration-200 hover:-translate-y-3"
+              >
+
+                <h3
+                  class="text-sm sm:text-base md:text-lg break-words"
+                >
+                  Lucas Pietro dos Santos
+                </h3>
+
+                <h4
+                  class="font-bold text-xs sm:text-sm mb-2"
+                >
+                  (Desenvolvedor 2)
+                </h4>
+
+                <img
+                  src="img/alunos/lucas.jpeg"
+                  alt="Lucas Pietro Lopes dos Santos"
+                  class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover shadow-2xl rounded-full border-6 border-[#00420C]"
+                />
+
+                <h3
+                  class="underline text-sm sm:text-base mt-1"
+                >
+                  @olucaspietro
+                </h3>
+
+              </div>
+
             </div>
-      </div>
-      </section>
+
+          </div>
+
+
+          <!-- =========================
+               SOBRE O PROJETO
+               ========================= -->
+          <h2
+            class="text-base sm:text-lg md:text-xl font-bold text-[#00420C] leading-relaxed"
+          >
+Os alunos do 1º ano do Ensino Médio Integrado ao Curso Técnico em Informática desenvolveram este projeto com o objetivo de colocar em prática os conhecimentos adquiridos ao longo das aulas. Durante o desenvolvimento, foram aplicados conceitos relacionados à programação, desenvolvimento web, estruturação de páginas, estilização de elementos, organização de conteúdo e navegação entre diferentes seções e páginas.
+<br><br>
+A realização deste trabalho proporcionou aos alunos a oportunidade de transformar os conteúdos estudados em uma aplicação prática, permitindo compreender de forma mais aprofundada como diferentes tecnologias podem ser utilizadas em conjunto para a construção de um site. Além da parte técnica, o projeto também envolveu aspectos como planejamento, organização das tarefas, divisão de responsabilidades, resolução de problemas e trabalho em equipe.
+<br><br>
+Para a construção da página, foram utilizados recursos de HTML, CSS, JavaScript e Tailwind CSS, além de ferramentas relacionadas ao desenvolvimento e versionamento do projeto. Cada integrante contribuiu em diferentes etapas do processo, desde a elaboração da estrutura e definição do conteúdo até a implementação, estilização, testes e ajustes finais.
+<br><br>
+Dessa forma, o projeto representa não apenas a aplicação dos conhecimentos adquiridos durante o curso, mas também uma experiência prática de desenvolvimento, permitindo aos alunos aprimorar suas habilidades técnicas, criatividade, organização e capacidade de trabalhar em equipe. O resultado é uma página desenvolvida de forma colaborativa, reunindo os conhecimentos estudados em sala de aula e demonstrando, na prática, parte das competências desenvolvidas ao longo do curso técnico.
+
+          </h2>
+        </section>
+
       </main>
+
     </div>
+    <!-- =========================
+         RODAPÉ
+         ========================= -->
+    <footer
+      class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-4 sm:p-5 text-white text-center text-xs sm:text-sm"
+    >
+
+      &copy; 2026 João Guilherme, João Vitor e Lucas Pietro |
+      All Rights Reserved
+
+    </footer>
+
   </div>
 
-  <!-- =========================
-     RODAPÉ
-     ========================= -->
-
-  <footer
-    class="bg-linear-to-b from-[rgba(6,95,22,1)] via-[rgba(22,134,43,1)] to-[rgba(13,106,31,1)] p-5 text-white text-center">
-    &copy; 2026 João Guilherme, João Vitor e Lucas Pietro | All Rights
-    Reserved
-  </footer>
-  </div>
 </body>
 
 </html>
