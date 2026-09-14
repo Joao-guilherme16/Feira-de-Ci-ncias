@@ -353,6 +353,7 @@ function mostrarPergunta() {
         });
 
         let professorOuProfessora;
+        let artigoGenero;
 
         if (
           professorResultado == "Janice" ||
@@ -362,8 +363,10 @@ function mostrarPergunta() {
           professorResultado == "Solange"
         ) {
           professorOuProfessora = "professora";
+          artigoGenero = "a"
         } else {
           professorOuProfessora = "professor";
+          artigoGenero = "o"
         }
 
         quiz.innerHTML = `
@@ -373,7 +376,7 @@ function mostrarPergunta() {
             </h2>
 
             <p class="text-xl mt-2">
-              Você é a ${professorOuProfessora}
+              Você é ${artigoGenero} ${professorOuProfessora}
               <strong>${professorResultado}</strong>!
             </p>
 
