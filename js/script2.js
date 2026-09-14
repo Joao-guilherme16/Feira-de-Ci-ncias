@@ -18,18 +18,18 @@ const professores = [
 ];
 
 const fotoProfessores = {
-  Ronaldo: "",
-  Júlio: "",
-  Heitor: "",
-  Ibsen: "",
-  Janice: "",
-  Noboru: "",
+  Ronaldo: "img/novoProfessor/semfotoMasculina.png",
+  Júlio: "img/novoProfessor/semfotoMasculina.png",
+  Heitor: "img/novoProfessor/semfotoMasculina.png",
+  Ibsen: "img/novoProfessor/semfotoMasculina.png",
+  Janice: "img/novoProfessor/semfotoFeminina.png",
+  Noboru: "img/novoProfessor/semfotoMasculina.png",
   Kamyla: "img/novoProfessor/kamyla.jpeg",
-  Ítalo: "",
+  Ítalo: "img/novoProfessor/semfotoMasculina.png",
   Guilherme: "img/novoProfessor/guilherme.png",
   Carolina: "img/novoProfessor/carolina.jpg",
-  Marcela: "",
-  LaSalvia: "",
+  Marcela: "img/novoProfessor/semfotoFeminina.png",
+  LaSalvia: "img/novoProfessor/semfotoFeminina.png",
   Solange: "img/novoProfessor/solange.png",
 };
 
