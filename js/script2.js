@@ -39,67 +39,69 @@ professores.forEach(function (professor) {
 
 const perguntas = [
   {
-    pergunta: "Como você prefere uma aula?",
+    pergunta:
+      "Quando você precisa aprender algo novo, qual jeito combina mais com você?",
     alternativas: [
       {
-        texto: "Com bastante explicação",
+        texto: "Gosto de entender bem o assunto antes de começar.",
         professor: "Ronaldo",
       },
       {
-        texto: "Com atividades práticas",
+        texto: "Prefiro aprender fazendo e colocando a mão na massa.",
         professor: "Júlio",
       },
       {
-        texto: "Com bastante conversa",
+        texto:
+          "Gosto de explicar minhas ideias e conversar bastante sobre o assunto.",
         professor: "Heitor",
       },
       {
-        texto: "Com muitos exercícios",
+        texto: "Aprendo melhor praticando e fazendo exercícios.",
         professor: "Ibsen",
       },
     ],
   },
 
   {
-    pergunta: "Como seria seu material de aula?",
+    pergunta: "Você recebeu uma tarefa difícil. Qual seria sua atitude?",
     alternativas: [
       {
-        texto: "Slides até a morte",
+        texto: "Organizaria tudo e seguiria um plano.",
         professor: "Janice",
       },
       {
-        texto: "99 exercícios",
+        texto: "Praticaria bastante até conseguir dominar o assunto.",
         professor: "Noboru",
       },
       {
-        texto: "Atividades impressas",
+        texto:
+          "Tentaria entender o contexto e o que existe por trás do problema.",
         professor: "Kamyla",
       },
       {
-        texto: "Explicações simples e diretas",
+        texto: "Procuraria uma maneira simples e prática de resolver.",
         professor: "Ítalo",
       },
     ],
   },
 
   {
-    pergunta:
-      "Se você pudesse escolher uma característica para ter como professor, qual seria?",
+    pergunta: "Qual dessas características mais combina com você?",
     alternativas: [
       {
-        texto: "Esforçado",
+        texto: "Sou dedicado e não desisto facilmente.",
         professor: "Guilherme",
       },
       {
-        texto: "Justo",
+        texto: "Gosto de tratar as pessoas de forma justa.",
         professor: "Carolina",
       },
       {
-        texto: "Ter um jeito marcante de falar",
+        texto: "Tenho um jeito próprio e marcante de me expressar.",
         professor: "Marcela",
       },
       {
-        texto: "Descontraído",
+        texto: "Gosto de deixar o ambiente mais leve e descontraído.",
         professor: "Solange",
       },
     ],
@@ -107,160 +109,172 @@ const perguntas = [
 
   {
     pergunta:
-      "Você precisa ensinar um assunto que a maioria da turma não entendeu. Qual seria sua estratégia?",
+      "Quando alguém não entende algo que você explicou, o que você faria?",
     alternativas: [
       {
-        texto: "O aluno teria medo de tirar sua dúvida",
-        professor: "La Salvia",
-      },
-      {
-        texto: "Voltaria todo o raciocínio",
+        texto: "Explicaria novamente, passo a passo, até ficar claro.",
         professor: "Ronaldo",
       },
       {
-        texto: "Iria até sua mesa e explicaria individualmente",
+        texto: "Iria ajudar a pessoa e tentaria explicar de outra maneira.",
         professor: "Júlio",
       },
       {
-        texto: "Mudaria de assunto rapidamente",
+        texto: "Continuaria conversando e desenvolvendo a explicação.",
         professor: "Heitor",
+      },
+      {
+        texto:
+          "Tentaria deixar a situação mais descontraída e depois ajudaria.",
+        professor: "Ibsen",
       },
     ],
   },
 
   {
-    pergunta: "Qual dessas frases mais combina com você?",
+    pergunta: "Como você organizaria uma aula ou apresentação?",
     alternativas: [
       {
-        texto: "Crítica, análise, dúvida ou sugestão?",
-        professor: "Ibsen",
-      },
-      {
-        texto: "Todos, abram o caderno, agora.",
+        texto:
+          "Planejaria tudo com antecedência e deixaria cada etapa organizada.",
         professor: "Janice",
       },
       {
-        texto: "Se você ficar no joguinho, a nota vai para o joguinho.",
+        texto: "Prepararia bastante coisa para praticar e testar.",
         professor: "Noboru",
       },
       {
-        texto: "Isso é uma construção social.",
+        texto: "Usaria exemplos relacionados à sociedade e ao cotidiano.",
+        professor: "Kamyla",
+      },
+      {
+        texto:
+          "Prepararia uma atividade prática para colocar o conhecimento em ação.",
+        professor: "Ítalo",
+      },
+    ],
+  },
+
+  {
+    pergunta: "Em um trabalho em grupo, qual papel mais combina com você?",
+    alternativas: [
+      {
+        texto:
+          "A pessoa que se dedica para garantir que o trabalho fique bem feito.",
+        professor: "Guilherme",
+      },
+      {
+        texto: "A pessoa que tenta encontrar uma solução boa para todos.",
+        professor: "Carolina",
+      },
+      {
+        texto:
+          "A pessoa que traz ideias e participa bastante das discussões.",
+        professor: "Marcela",
+      },
+      {
+        texto: "A pessoa que ajuda a deixar o grupo mais à vontade.",
+        professor: "Solange",
+      },
+    ],
+  },
+
+  {
+    pergunta: "Qual dessas atitudes mais combina com você?",
+    alternativas: [
+      {
+        texto:
+          "Gosto de manter o foco e ajudar a manter tudo organizado.",
+        professor: "LaSalvia",
+      },
+      {
+        texto:
+          "Gosto de analisar as situações e pensar sobre diferentes pontos de vista.",
+        professor: "Ibsen",
+      },
+      {
+        texto: "Acho importante que todos sejam tratados de forma justa.",
+        professor: "Carolina",
+      },
+      {
+        texto:
+          "Prefiro resolver as situações com tranquilidade e bom humor.",
+        professor: "Solange",
+      },
+    ],
+  },
+
+  {
+    pergunta: "Qual dessas formas de estudar combina mais com você?",
+    alternativas: [
+      {
+        texto: "Estudar com explicações e anotações bem organizadas.",
+        professor: "Ronaldo",
+      },
+      {
+        texto: "Estudar junto com outras pessoas e trocar ideias.",
+        professor: "Júlio",
+      },
+      {
+        texto: "Fazer muitos exercícios para praticar.",
+        professor: "Noboru",
+      },
+      {
+        texto:
+          "Relacionar o conteúdo com situações do mundo real.",
         professor: "Kamyla",
       },
     ],
   },
 
   {
-    pergunta: "Qual seria seu método avaliativo?",
+    pergunta:
+      "Durante uma discussão, alguém apresenta uma opinião diferente da sua. Como você reagiria?",
     alternativas: [
       {
         texto:
-          "De dois em dois meses levaria os alunos ao laboratório para fazer uma atividade simples",
-        professor: "Ítalo",
-      },
-      {
-        texto: "Passaria testinhos de 1 ponto, lista de exercícios e provas",
-        professor: "Guilherme",
+          "Manteria meu posicionamento e explicaria meus argumentos.",
+        professor: "LaSalvia",
       },
       {
         texto:
-          "Faria apresentações de trabalho e deixaria o aluno escolher a data",
-        professor: "Carolina",
-      },
-      {
-        texto: "Faria uma prova em que o aluno pode escolher as questões",
+          "Tentaria analisar os argumentos antes de responder.",
         professor: "Marcela",
       },
-    ],
-  },
-
-  {
-    pergunta: "O que mais te incomodaria como professor?",
-    alternativas: [
       {
-        texto: "Desrespeitar as artes apresentadas",
-        professor: "Solange",
-      },
-      {
-        texto: "Falar antes da chamada",
-        professor: "La Salvia",
-      },
-      {
-        texto: "Atrapalhar quem realmente quer aprender",
-        professor: "Ronaldo",
-      },
-      {
-        texto: "Danificar os aparelhos eletrônicos",
-        professor: "Júlio",
-      },
-    ],
-  },
-
-  {
-    pergunta: "Um aluno diz que não gosta da matéria. O que você faria?",
-    alternativas: [
-      {
-        texto: "Implicaria com o aluno nas próximas aulas",
-        professor: "Heitor",
-      },
-      {
-        texto: "Pediria um e-mail sobre suas opiniões",
+        texto:
+          "Levaria a conversa de forma leve e descontraída.",
         professor: "Ibsen",
       },
       {
-        texto: "Continuaria com a matéria normalmente",
-        professor: "Janice",
-      },
-      {
-        texto: "Procuraria 99 motivos para o aluno gostar da matéria",
-        professor: "Noboru",
+        texto:
+          "Tentaria entender o contexto e de onde aquela opinião surgiu.",
+        professor: "Kamyla",
       },
     ],
   },
 
   {
-    pergunta:
-      "O que você faria se terminasse todo o conteúdo planejado antes do final da aula?",
+    pergunta: "Qual dessas situações mais combina com você?",
     alternativas: [
       {
-        texto: "Liberaria todos os alunos",
-        professor: "Kamyla",
+        texto: "Gosto de explicar bastante e compartilhar o que sei.",
+        professor: "Heitor",
       },
       {
-        texto: "Permitiria o uso livre dos computadores",
+        texto:
+          "Prefiro observar, ajudar quando necessário e aprender na prática.",
         professor: "Ítalo",
       },
       {
-        texto: "Esperaria na sala sem passar nada",
+        texto:
+          "Reviso meu trabalho para ter certeza de que ficou bem feito.",
         professor: "Guilherme",
       },
       {
-        texto: "Faria a chamada demoradamente até o fim da aula",
-        professor: "Carolina",
-      },
-    ],
-  },
-
-  {
-    pergunta:
-      "Se um aluno desafiasse sua opinião durante uma discussão, como reagiria?",
-    alternativas: [
-      {
         texto:
-          "Procuraria entender o lado do aluno e complementar o debate com pesquisas",
-        professor: "Marcela",
-      },
-      {
-        texto: "Apenas respeitaria a opinião do aluno e voltaria a dar aula",
-        professor: "Solange",
-      },
-      {
-        texto: "Corrigiria com uma postura firme",
-        professor: "La Salvia",
-      },
-      {
-        texto: "Apenas não me importaria",
-        professor: "Ronaldo",
+          "Procuro uma solução que funcione bem para todo mundo.",
+        professor: "Carolina",
       },
     ],
   },
@@ -313,12 +327,12 @@ function mostrarPergunta() {
             </h2>
 
             <p class="text-xl mt-2">
-              Você é o professor 
+              Você é o professor
               <strong>${professorResultado}</strong>!
             </p>
 
-            <img 
-              src="${fotoProfessores[professorResultado]}" 
+            <img
+              src="${fotoProfessores[professorResultado]}"
               alt="Professor ${professorResultado}"
               class="w-64 h-64 object-cover rounded-xl mx-auto mt-6 shadow-lg"
             >
