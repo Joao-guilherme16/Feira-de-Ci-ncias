@@ -2,34 +2,34 @@ let pontos = {};
 let perguntaAtual = 0;
 
 const professores = [
-  "Ronaldo", // 1
-  "Júlio", // 2
-  "Heitor", // 3
-  "Ibsen", // 4
-  "Janice", // 5
-  "Noboru", // 6
-  "Kamyla", // 7
-  "Ítalo", // 8
-  "Guilherme", // 9
-  "Carolina", // 10
-  "Marcela", // 11
-  "LaSalvia", // 12
-  "Solange", // 13
+  "Ronaldo",
+  "Júlio",
+  "Heitor",
+  "Ibsen",
+  "Janice",
+  "Noboru",
+  "Kamyla",
+  "Ítalo",
+  "Guilherme",
+  "Carolina",
+  "Marcela",
+  "LaSalvia",
+  "Solange",
 ];
 
 const fotoProfessores = {
-  Ronaldo: "img/novoProfessor/semfotoMasculina.png",
-  Júlio: "img/novoProfessor/semfotoMasculina.png",
-  Heitor: "img/novoProfessor/semfotoMasculina.png",
-  Ibsen: "img/novoProfessor/semfotoMasculina.png",
-  Janice: "img/novoProfessor/semfotoFeminina.png",
-  Noboru: "img/novoProfessor/semfotoMasculina.png",
+  Ronaldo: "",
+  Júlio: "",
+  Heitor: "",
+  Ibsen: "",
+  Janice: "",
+  Noboru: "",
   Kamyla: "img/novoProfessor/kamyla.jpeg",
-  Ítalo: "img/novoProfessor/semfotoMasculina.png",
-  Guilherme: "img/novoProfessor/guilherme.png",
+  Ítalo: "",
+  Guilherme: "",
   Carolina: "img/novoProfessor/carolina.jpg",
-  Marcela: "img/novoProfessor/semfotoFeminina.png",
-  LaSalvia: "img/novoProfessor/semfotoFeminina.png",
+  Marcela: "",
+  LaSalvia: "",
   Solange: "img/novoProfessor/solange.png",
 };
 
@@ -209,7 +209,8 @@ const perguntas = [
         professor: "Carolina",
       },
       {
-        texto: "A pessoa que traz ideias e participa bastante das discussões.",
+        texto:
+          "A pessoa que traz ideias e participa bastante das discussões.",
         professor: "Marcela",
       },
       {
@@ -281,7 +282,8 @@ const perguntas = [
         professor: "Ibsen",
       },
       {
-        texto: "Tentaria entender o contexto e de onde aquela opinião surgiu.",
+        texto:
+          "Tentaria entender o contexto e de onde aquela opinião surgiu.",
         professor: "Kamyla",
       },
     ],
@@ -350,30 +352,42 @@ function mostrarPergunta() {
           }
         });
 
+        let professorOuProfessora;
+
+        if (
+          professorResultado == "Janice" ||
+          professorResultado == "Kamyla" ||
+          professorResultado == "Carolina" ||
+          professorResultado == "Marcela" ||
+          professorResultado == "Solange"
+        ) {
+          professorOuProfessora = "professora";
+        } else {
+          professorOuProfessora = "professor";
+        }
+
         quiz.innerHTML = `
-  <div class="text-center">
+          <div class="text-center">
+            <h2 class="text-2xl font-bold">
+              Quiz terminado!
+            </h2>
 
-    <h2 class="text-2xl font-bold">
-      Quiz terminado!
-    </h2>
+            <p class="text-xl mt-2">
+              Você é a ${professorOuProfessora}
+              <strong>${professorResultado}</strong>!
+            </p>
 
-    <p class="text-xl mt-2">
-      Você é o professor
-      <strong>${professorResultado}</strong>!
-    </p>
+            <p class="text-base mt-4 text-gray-600">
+              ${descricoesProfessores[professorResultado]}
+            </p>
 
-    <p class="text-base mt-4 text-gray-600">
-      ${descricoesProfessores[professorResultado]}
-    </p>
-
-    <img
-      src="${fotoProfessores[professorResultado]}"
-      alt="Professor ${professorResultado}"
-      class="w-64 h-64 object-cover rounded-xl mx-auto mt-6 shadow-lg"
-    >
-
-  </div>
-`;
+            <img
+              src="${fotoProfessores[professorResultado]}"
+              alt="${professorOuProfessora} ${professorResultado}"
+              class="w-64 h-64 object-cover rounded-xl mx-auto mt-6 shadow-lg"
+            >
+          </div>
+        `;
       }
     });
   });
