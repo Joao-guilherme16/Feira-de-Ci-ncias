@@ -33,6 +33,47 @@ const fotoProfessores = {
   Solange: "img/novoProfessor/solange.png",
 };
 
+const descricoesProfessores = {
+  Ronaldo:
+    "Explicativo, paciente e dedicado a fazer com que todos entendam o conteúdo.",
+
+  Júlio:
+    "Prático, amigável e próximo da turma, sempre deixando o aprendizado mais leve.",
+
+  Heitor:
+    "Comunicativo, expressivo e muito envolvido em compartilhar o que sabe.",
+
+  Ibsen:
+    "Bem-humorado, descontraído e sempre capaz de deixar o ambiente mais divertido.",
+
+  Janice:
+    "Organizada, objetiva e planejada, gosta de manter tudo bem estruturado.",
+
+  Noboru:
+    "Persistente, dedicado e incentivador da prática, sempre buscando fazer você evoluir.",
+
+  Kamyla:
+    "Reflexiva, crítica e atenta às questões sociais e ao contexto das situações.",
+
+  Ítalo:
+    "Tranquilo, prestativo e ligado a atividades práticas e ao uso da tecnologia.",
+
+  Guilherme:
+    "Esforçado, dedicado e comprometido em fazer tudo da melhor maneira possível.",
+
+  Carolina:
+    "Justa, flexível e compreensiva, buscando sempre equilibrar as situações.",
+
+  Marcela:
+    "Expressiva, criativa e aberta ao diálogo e à troca de diferentes opiniões.",
+
+  LaSalvia:
+    "Firme, responsável e comprometido com a organização e o bom funcionamento das coisas.",
+
+  Solange:
+    "Descontraída, criativa e acolhedora, trazendo leveza para o ambiente.",
+};
+
 professores.forEach(function (professor) {
   pontos[professor] = 0;
 });
@@ -168,8 +209,7 @@ const perguntas = [
         professor: "Carolina",
       },
       {
-        texto:
-          "A pessoa que traz ideias e participa bastante das discussões.",
+        texto: "A pessoa que traz ideias e participa bastante das discussões.",
         professor: "Marcela",
       },
       {
@@ -183,8 +223,7 @@ const perguntas = [
     pergunta: "Qual dessas atitudes mais combina com você?",
     alternativas: [
       {
-        texto:
-          "Gosto de manter o foco e ajudar a manter tudo organizado.",
+        texto: "Gosto de manter o foco e ajudar a manter tudo organizado.",
         professor: "LaSalvia",
       },
       {
@@ -197,8 +236,7 @@ const perguntas = [
         professor: "Carolina",
       },
       {
-        texto:
-          "Prefiro resolver as situações com tranquilidade e bom humor.",
+        texto: "Prefiro resolver as situações com tranquilidade e bom humor.",
         professor: "Solange",
       },
     ],
@@ -220,8 +258,7 @@ const perguntas = [
         professor: "Noboru",
       },
       {
-        texto:
-          "Relacionar o conteúdo com situações do mundo real.",
+        texto: "Relacionar o conteúdo com situações do mundo real.",
         professor: "Kamyla",
       },
     ],
@@ -232,23 +269,19 @@ const perguntas = [
       "Durante uma discussão, alguém apresenta uma opinião diferente da sua. Como você reagiria?",
     alternativas: [
       {
-        texto:
-          "Manteria meu posicionamento e explicaria meus argumentos.",
+        texto: "Manteria meu posicionamento e explicaria meus argumentos.",
         professor: "LaSalvia",
       },
       {
-        texto:
-          "Tentaria analisar os argumentos antes de responder.",
+        texto: "Tentaria analisar os argumentos antes de responder.",
         professor: "Marcela",
       },
       {
-        texto:
-          "Levaria a conversa de forma leve e descontraída.",
+        texto: "Levaria a conversa de forma leve e descontraída.",
         professor: "Ibsen",
       },
       {
-        texto:
-          "Tentaria entender o contexto e de onde aquela opinião surgiu.",
+        texto: "Tentaria entender o contexto e de onde aquela opinião surgiu.",
         professor: "Kamyla",
       },
     ],
@@ -267,13 +300,11 @@ const perguntas = [
         professor: "Ítalo",
       },
       {
-        texto:
-          "Reviso meu trabalho para ter certeza de que ficou bem feito.",
+        texto: "Reviso meu trabalho para ter certeza de que ficou bem feito.",
         professor: "Guilherme",
       },
       {
-        texto:
-          "Procuro uma solução que funcione bem para todo mundo.",
+        texto: "Procuro uma solução que funcione bem para todo mundo.",
         professor: "Carolina",
       },
     ],
@@ -320,25 +351,29 @@ function mostrarPergunta() {
         });
 
         quiz.innerHTML = `
-          <div class="text-center">
+  <div class="text-center">
 
-            <h2 class="text-2xl font-bold">
-              Quiz terminado!
-            </h2>
+    <h2 class="text-2xl font-bold">
+      Quiz terminado!
+    </h2>
 
-            <p class="text-xl mt-2">
-              Você é o professor
-              <strong>${professorResultado}</strong>!
-            </p>
+    <p class="text-xl mt-2">
+      Você é o professor
+      <strong>${professorResultado}</strong>!
+    </p>
 
-            <img
-              src="${fotoProfessores[professorResultado]}"
-              alt="Professor ${professorResultado}"
-              class="w-64 h-64 object-cover rounded-xl mx-auto mt-6 shadow-lg"
-            >
+    <p class="text-base mt-4 text-gray-600">
+      ${descricoesProfessores[professorResultado]}
+    </p>
 
-          </div>
-        `;
+    <img
+      src="${fotoProfessores[professorResultado]}"
+      alt="Professor ${professorResultado}"
+      class="w-64 h-64 object-cover rounded-xl mx-auto mt-6 shadow-lg"
+    >
+
+  </div>
+`;
       }
     });
   });
