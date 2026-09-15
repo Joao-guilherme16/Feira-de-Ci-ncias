@@ -29,7 +29,7 @@ const fotoProfessores = {
   Guilherme: "img/novoProfessor/guilherme.png",
   Carolina: "img/novoProfessor/carolina.jpg",
   Marcela: "img/novoProfessor/semfotoFeminina.png",
-  LaSalvia: "img/novoProfessor/semfotoFeminina.png",
+  LaSalvia: "img/novoProfessor/la-salvia.jpeg",
   Solange: "img/novoProfessor/solange.png",
 };
 
