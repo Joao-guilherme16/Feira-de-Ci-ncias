@@ -20,8 +20,8 @@ const professores = [
 const fotoProfessores = {
   Ronaldo: "img/novoProfessor/semfotoMasculina.png",
   Júlio: "img/novoProfessor/semfotoMasculina.png",
-  Heitor: "img/novoProfessor/semfotoMasculina.png",
-  Ibsen: "img/novoProfessor/semfotoMasculina.png",
+  Heitor: "img/novoProfessor/heitor.png",
+  Ibsen: "img/novoProfessor/ibsen.png",
   Janice: "img/novoProfessor/semfotoFeminina.png",
   Noboru: "img/novoProfessor/semfotoMasculina.png",
   Kamyla: "img/novoProfessor/kamyla.jpeg",
